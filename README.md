@@ -5,7 +5,7 @@ In DeliVeggie, we have two web pages:
 The product list page, which displays a list of products
 Product details page which displays the details of a selected product
 
-Technologies Used :
+<b>Technologies Used</b> :
 
 Data Base: MongoDB
 Back End: .NET Core 3.1
