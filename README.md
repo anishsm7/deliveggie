@@ -1,4 +1,4 @@
-Application : DeliVeggie
+Application : <b>DeliVeggie</b>
 
 In DeliVeggie, we have two web pages:
 
