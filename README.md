@@ -20,9 +20,9 @@ DeliVeggie.Gateway (API Gateway) is used to centralize, manage, and monitor the 
 
 DeliVeggie.Services.Products will act as a microservice here
 
-ProductMdo : This is used for product data
-ProductManager : Manager class will fetch the data.
-ProductRepository : Repository class will help to retrieve data from data base.
+ProductMdo : This is used for product data.<br/>
+ProductManager : Manager class will fetch the data.<br/>
+ProductRepository : Repository class will help to retrieve data from data base.<br/>
 
 <b>Deployment</b>
 
