@@ -15,6 +15,6 @@
   </ItemGroup>
 	
     <ItemGroup>
-    <ProjectReference Include="..\..\Shared\DeliVeggie.Common\DeliVeggie.Common.csproj" />
+    <ProjectReference Include="..\Shared\DeliVeggie.Common\DeliVeggie.Common.csproj" />
   </ItemGroup>
 </Project>

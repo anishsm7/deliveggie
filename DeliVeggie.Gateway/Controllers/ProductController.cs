@@ -11,14 +11,12 @@ namespace DeliVeggie.Gateway.Controllers
     [ApiController]
     [Route("[controller]")]
     public class ProductController : ControllerBase
-    {
-        private readonly ILogger<ProductController> logger;
+    {       
         private readonly ProductService productService;
         private readonly IConfiguration Configuration;
 
-        public ProductController(ILogger<ProductController> logger, ProductService productService)
-        {
-            this.logger = logger;
+        public ProductController(ProductService productService)
+        {           
             this.productService = productService;
         }
 
@@ -34,16 +32,12 @@ namespace DeliVeggie.Gateway.Controllers
         public ActionResult<ProductModel> GetProductDetails(string Id)
         {
             if (string.IsNullOrEmpty(Id))
-            {
-                return BadRequest("ID is Invalid");
-            }
+                return BadRequest("ID is Invalid");           
 
             ProductModel product = productService.GetProduct(Id); ;
 
-            if (product == null)
-            {
-                return NotFound("Product not found");
-            }
+            if (product == null)           
+                return NotFound("Product not found");           
 
             return Ok(product);
         }

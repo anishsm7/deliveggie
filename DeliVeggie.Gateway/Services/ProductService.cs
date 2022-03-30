@@ -20,25 +20,16 @@ namespace DeliVeggie.Gateway.Services
         public IEnumerable<ProductModel> GetProducts()
         {
             List<ProductModel> products = new List<ProductModel>();
-            using (var bus = RabbitHutch.CreateBus(this.GetConnectionString()))
-            {
-                var request = new ProductsRequest();
-                var response = bus.Rpc.Request<ProductsRequest, ProductsResponse>(request);
-                products = response.Products.Select(x => MapProductResponseToModel(x)).ToList();
-            }
-            return products;
+            var request = new ProductsRequest();
+            var response = GetResponse<ProductsRequest, ProductsResponse>(request);
+            return response.Products.Select(x => MapProductResponseToModel(x)).ToList();
         }
 
         public ProductModel GetProduct(string ProductId)
         {
-            ProductModel product = new ProductModel();
-            using (var bus = RabbitHutch.CreateBus(this.GetConnectionString()))
-            {
-                var request = new ProductRequest(){ProductId = ProductId};
-                var response = bus.Rpc.Request<ProductRequest, ProductResponse>(request);
-                product = MapProductResponseToModel(response.Product);
-            }
-            return product;
+            var request = new ProductRequest() { ProductId = ProductId };
+            var response = GetResponse<ProductRequest, ProductResponse>(request);
+            return MapProductResponseToModel(response.Product);
         }
 
         private ProductModel MapProductResponseToModel(ProductDto productDto){
@@ -48,5 +39,15 @@ namespace DeliVeggie.Gateway.Services
         private string GetConnectionString(){
             return Configuration["RabbitMq:Host"];
         }
+
+        private T GetResponse<R, T>(R request)
+        {
+            using (var bus = RabbitHutch.CreateBus(this.GetConnectionString()))
+            {
+                return bus.Rpc.Request<R, T>(request);
+            }
+        }
     }
+
+    
 }
