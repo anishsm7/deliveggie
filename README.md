@@ -7,10 +7,10 @@ Product details page which displays the details of a selected product
 
 <b>Technologies Used</b> :
 
-Data Base: MongoDB
-Back End: .NET Core 3.1
-Front End: Angular 12
-Message Broker: RabbitMq and EasyNetQ
+Data Base: MongoDB <br/>
+Back End: .NET Core 3.1<br/>
+Front End: Angular 12<br/>
+Message Broker: RabbitMq and EasyNetQ<br/>
 
 Angular SPA is used to display product list and product details. Contains two pages(product list page & product details page).
 Two components are used : list.component & details.component
