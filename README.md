@@ -1,11 +1,11 @@
-Application : <b>DeliVeggie</b>
+<b>DeliVeggie</b>
 
 In DeliVeggie, we have two web pages:
 
 The product list page, which displays a list of products
 Product details page which displays the details of a selected product
 
-<b>Technologies Used</b> :
+<b>Technologies Used</b>
 
 Data Base: MongoDB <br/>
 Back End: .NET Core 3.1<br/>
@@ -24,8 +24,10 @@ ProductMdo : This is used for product data
 ProductManager : Manager class will fetch the data.
 ProductRepository : Repository class will help to retrieve data from data base.
 
+<b>Deployment</b>
 
-
+Docker with Container Orchestrator Support.
+Kubernetes on Docker Desktop
 
 
 
