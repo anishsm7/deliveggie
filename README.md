@@ -26,8 +26,8 @@ ProductRepository : Repository class will help to retrieve data from data base.
 
 <b>Deployment</b>
 
-Docker with Container Orchestrator Support.
-Kubernetes on Docker Desktop
+Docker with Container Orchestrator Support.<br/>
+Kubernetes on Docker Desktop.
 
 
 
