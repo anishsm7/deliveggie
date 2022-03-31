@@ -1,8 +1,24 @@
+
 table {
-    width: 30%;
+  width: 30%;
+}
+
+table tr{
+ cursor: pointer;
+ text-align: left;
+}
+
+  .list
+  {
+    margin-left: auto;margin-right: auto;
+  }
+  .list-div
+  {
+    text-align: center;
+  }
+  h2{
+    color: white;
   }
 
-  table tr{
-   cursor: pointer;
-  }
+  
  

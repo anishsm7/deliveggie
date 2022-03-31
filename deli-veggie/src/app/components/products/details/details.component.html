@@ -1,23 +1,26 @@
-<h2>Deli Veggie Product Details</h2>
 <div>
     <a routerLink="//productlist/">Browse More Products</a>
 </div>
-<div>
-    <div>
-        <table>
-            <tr>
-                <td>Product : </td>
-                <td>{{details.name}}</td>
-            </tr>
-            <tr>
-                <td>Entry Date : </td>
-                <td>{{details.entryDate | date:'medium'}}</td>
-            </tr>
-            <tr>
-                <td>Price : </td>
-                <td>{{details.price}}</td>
-            </tr>
-        </table>       
+<div class="details-div">
+    <h2>Deli Veggie Product Details</h2>
 
+    <div>
+        <div>
+            <table class="details">
+                <tr>
+                    <td>Product : </td>
+                    <td>{{details.name}}</td>
+                </tr>
+                <tr>
+                    <td>Entry Date : </td>
+                    <td>{{details.entryDate | date:'medium'}}</td>
+                </tr>
+                <tr>
+                    <td>Price : </td>
+                    <td>{{details.price}}</td>
+                </tr>
+            </table>
+
+        </div>
     </div>
 </div>
