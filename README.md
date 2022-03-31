@@ -2,8 +2,8 @@
 
 In DeliVeggie, we have two web pages:
 
-The product list page, which displays a list of products<br/>
-Product details page which displays the details of a selected product
+The product listing page, which displays list of products.<br/>
+Product details page, which displays the details of selected product.
 
 <b>Technologies Used</b>
 
@@ -16,7 +16,7 @@ Angular SPA is used to display product list and product details. Contains two pa
 Two components are used : list.component & details.component.<br/>
 Service named product.service is used to get data from API.<br/>
 
-DeliVeggie.Gateway (API Gateway) is used to centralize, manage, and monitor the non-functional requirements of this application, orchestrate the cross-functional microservices, and reduce roundtrips. DeliVeggie.Gateway will act as a API gate way here. Moving forward we can use services like Azure APIM as gateway for microservices.
+DeliVeggie.Gateway (API Gateway) is used to centralize, manage, and monitor this application, orchestrate the cross-functional microservices, and reduce roundtrips. DeliVeggie.Gateway will act as a API gate way here. Moving forward we can use services like Azure APIM as gateway for microservices.
 
 DeliVeggie.Services.Products will act as a microservice here
 
