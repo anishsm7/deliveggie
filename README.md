@@ -16,7 +16,7 @@ Angular SPA is used to display product list and product details. Contains two pa
 Two components are used : list.component & details.component.<br/>
 Service named product.service is used to get data from API.<br/>
 
-DeliVeggie.Gateway (API Gateway) is used to centralize, manage, and monitor this application, orchestrate the cross-functional microservices, and reduce roundtrips. DeliVeggie.Gateway will act as a API gate way here. Moving forward we can use services like Azure APIM as gateway for microservices.
+DeliVeggie.Gateway (API Gateway) is used to centralize, manage and monitor this application. Orchestrate the cross-functional microservices and reduce roundtrips. DeliVeggie.Gateway will act as a API gate way here. Moving forward we can use services like Azure APIM as gateway for microservices.
 
 DeliVeggie.Services.Products will act as a microservice here
 
